@@ -11,10 +11,10 @@ function App() {
 	};
 
 	return (
-		<main>
-			<h1>{numBirthdays} Birthdays Today</h1>
+		<main className="birthdays-container">
+			<h1 className="birthdays-header">{numBirthdays} Birthdays Today</h1>
 			<List items={people} />
-			<button type="button" onClick={deletePeople}>
+			<button className="birthdays-btn" type="button" onClick={deletePeople}>
 				Clear All
 			</button>
 		</main>

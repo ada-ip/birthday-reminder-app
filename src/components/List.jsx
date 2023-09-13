@@ -2,7 +2,7 @@ import Person from "./Person.jsx";
 
 function List({ items }) {
 	return (
-		<div>
+		<div className="birthdays-list">
 			{items.map((item, index) => (
 				<Person key={index} {...item} />
 			))}
